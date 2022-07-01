@@ -38,7 +38,7 @@ fontLoader.load(
 
         // Text
         const textGeometry = new TextGeometry(
-            'Happy Birthday',
+            'Happy Birthday!',
             {
                 font: font,
                 size: 0.5,
@@ -59,7 +59,7 @@ fontLoader.load(
         // Donuts
         const donutGeometry = new THREE.TorusGeometry(0.3, 0.2, 32, 64)
 
-        for(let i = 0; i < 20; i++)
+        for(let i = 0; i < 40; i++)
         {
             const donut = new THREE.Mesh(donutGeometry, material)
             donut.position.x = (Math.random() - 0.5) * 10
